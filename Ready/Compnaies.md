@@ -1,8 +1,8 @@
 - Intuit ✅
-- Phonepe
-- RingCentral
+- Phonepe ✅
+- RingCentral ✅
 - Texas instruments 
-- Oracle
+- Oracle ✅
 - Pure storage 
 - Wells fargo
 - Qualcomm 
