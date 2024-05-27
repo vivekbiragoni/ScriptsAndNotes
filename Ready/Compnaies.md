@@ -1,0 +1,25 @@
+- Intuit ✅
+- Phonepe
+- RingCentral
+- Texas instruments 
+- Oracle
+- Pure storage 
+- Wells fargo
+- Qualcomm 
+- Edge compute
+- Aqr capital 
+- Media.net
+- Cisco 
+- Samsung semiconductor 
+- Sap lab 
+- Ola Electric 
+- Paypal
+- Palo Alto 
+- Samsung R&D
+- Oppo mobile R&D
+- Navi technology 
+- Amazon web services 
+- Nividia 
+- Myntra designs
+- Western digital 
+- Webtec
