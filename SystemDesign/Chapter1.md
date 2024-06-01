@@ -206,3 +206,48 @@ To improve the system further, we can integrate a message queue and other essent
 
 ![image](https://github.com/vivekbiragoni/ScriptsAndNotes/assets/104636857/491ede3e-4d48-414e-96df-e84a8e7515ea)
 
+
+
+### Database Scaling
+
+As your data grows, your database can become overloaded. To handle this, you need to scale your database. There are two main approaches: **vertical scaling** and **horizontal scaling**.
+
+#### Vertical Scaling (Scaling Up)
+- **Definition**: Adding more power (CPU, RAM, disk space, etc.) to an existing machine.
+- **Example**: Upgrading a database server to one with 24 TB of RAM to handle more data.
+- **Drawbacks**:
+  - **Hardware Limits**: There's a maximum limit to how much you can upgrade a single machine.
+  - **Single Point of Failure**: If the powerful server fails, your entire database goes down.
+  - **High Cost**: Powerful servers are very expensive.
+
+#### Horizontal Scaling (Sharding)
+- **Definition**: Adding more servers to distribute the load.
+- **Sharding**: Splitting a large database into smaller pieces called shards. Each shard has the same schema but different data.
+- **Example**: Distributing user data across multiple database servers based on user IDs using a hash function (e.g., user_id % 4).
+- **Sharding Key**: A key (e.g., user_id) that determines how data is distributed across shards.
+  
+![image](https://github.com/vivekbiragoni/ScriptsAndNotes/assets/104636857/785bb155-2c5a-4578-87f3-54d236931669)
+
+**Benefits**:
+- **Scalability**: Easily add more servers as needed.
+- **Reduced Risk**: Failure of one server doesn’t bring down the entire database.
+
+**Challenges**:
+- **Resharding Data**: If a shard becomes too full or unevenly distributed, you may need to redistribute data.
+- **Celebrity Problem**: High traffic to specific data (e.g., celebrity profiles) can overwhelm a shard.
+- **Join Operations**: Joining data across shards is difficult, often requiring denormalization.
+
+### Summary of Scaling for Millions of Users
+
+To support millions of users, apply the following strategies:
+1. **Keep Web Tier Stateless**: Store session data in a shared data store.
+2. **Build Redundancy**: Ensure every tier has backup options to avoid single points of failure.
+3. **Cache Data**: Use caching to reduce load on your database.
+4. **Support Multiple Data Centers**: Distribute data centers geographically to improve availability and user experience.
+5. **Host Static Assets in CDN**: Use Content Delivery Networks to serve static files quickly.
+6. **Scale Data Tier by Sharding**: Distribute database load by sharding.
+7. **Split Tiers into Individual Services**: Decouple services to manage and scale them independently.
+8. **Monitor Your System**: Use logging and metrics to track system performance.
+9. **Use Automation Tools**: Implement tools for continuous integration, testing, and deployment to improve efficiency.
+
+![image](https://github.com/vivekbiragoni/ScriptsAndNotes/assets/104636857/92a7220c-7328-4823-8883-3f42e39a741d)
