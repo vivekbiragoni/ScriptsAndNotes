@@ -183,3 +183,26 @@ To achieve horizontal scalability in the web tier, it is crucial to move state i
 3. **Data Consistency**: Ensure consistency between the shared data store and web servers. Data synchronization and handling data updates efficiently is crucial.
 4. **Global Availability**: For websites with international users, deploying multiple data centers improves availability and reduces latency by serving users from geographically closer servers.
 
+
+
+### Adding Message Queues and Tools
+
+
+![image](https://github.com/vivekbiragoni/ScriptsAndNotes/assets/104636857/69021db8-d336-44f4-82a1-80d051eb14ac)
+
+
+To improve the system further, we can integrate a message queue and other essential tools. Here’s a simplified version of the updated design:
+
+1. **Message Queue**: Adds flexibility and resilience by decoupling producers and consumers.
+2. **Logging, Monitoring, Metrics, and Automation Tools**: Enhances system reliability and developer productivity by providing better visibility into system performance and automating repetitive tasks.
+
+**Updated Design Example**:
+- Imagine a single data center with:
+  - Web servers sending tasks to a message queue.
+  - Consumers processing tasks from the message queue.
+  - Centralized logging and monitoring to keep track of system health.
+  - Automation tools to streamline development and deployment processes.
+
+
+![image](https://github.com/vivekbiragoni/ScriptsAndNotes/assets/104636857/491ede3e-4d48-414e-96df-e84a8e7515ea)
+
