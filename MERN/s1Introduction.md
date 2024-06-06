@@ -1,0 +1,5 @@
+![image](https://github.com/vivekbiragoni/ScriptsAndNotes/assets/104636857/4f4a6ead-7417-47b2-9d04-b228e257b998)
+![image](https://github.com/vivekbiragoni/ScriptsAndNotes/assets/104636857/9c7909b2-caff-49a2-a9e7-b92ef6b9a91e)
+![image](https://github.com/vivekbiragoni/ScriptsAndNotes/assets/104636857/deaf9210-1c39-4a9c-bffd-d1e8511e6265)
+![image](https://github.com/vivekbiragoni/ScriptsAndNotes/assets/104636857/43f641a1-556b-4471-b8be-e242f0735002)
+![image](https://github.com/vivekbiragoni/ScriptsAndNotes/assets/104636857/e13c838e-fe32-4ba1-80f5-50c49847eda8)
